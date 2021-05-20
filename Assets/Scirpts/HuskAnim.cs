@@ -32,6 +32,21 @@ public class HuskAnim : MonoBehaviour
             husker.SetInteger("Form", 0);            
         }
 
+        if (Input.GetKey(KeyCode.W))
+        {
+            husker.SetInteger("Form", 1);
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                husker.SetInteger("Form", 3);
+
+            }
+        }
+        else
+        {
+            husker.SetInteger("Form", 0);
+        }
+
 
     }
 }
